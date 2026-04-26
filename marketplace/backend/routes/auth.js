@@ -5,8 +5,15 @@ const { body, validationResult } = require('express-validator');
 const User = require('../models/User');
 const { protect } = require('../middleware/auth');
 
+const resolveJwtExpiry = () => {
+  const raw = (process.env.JWT_EXPIRES_IN || '').trim();
+  // Accept common jsonwebtoken timespan formats like 7d, 12h, 3600.
+  if (/^\d+$/.test(raw) || /^\d+[smhdwy]$/i.test(raw)) return raw;
+  return '7d';
+};
+
 const signToken = (id) =>
-  jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
+  jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: resolveJwtExpiry() });
 
 // POST /api/auth/register
 router.post('/register', [

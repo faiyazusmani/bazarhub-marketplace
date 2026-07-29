@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "_id": "user_demo_1",
+      "name": "Rahul Sharma",
+      "email": "demo@bazarhub.com",
+      "phone": "+91 9876543210",
+      "password": "$2a$10$kWW2yJfyGBnIASe4ih/SQOJ/5Q3prq6OWd5ECaK.bMveVvYfY8iKu",
+      "avatar": "",
+      "createdAt": "2026-07-29T06:29:03.688Z"
+    }
+  ],
+  "listings": [
+    {
+      "_id": "list_1",
+      "user": {
+        "_id": "user_demo_1",
+        "name": "Rahul Sharma",
+        "phone": "+91 9876543210",
+        "email": "demo@bazarhub.com"
+      },
+      "type": "product",
+      "name": "iPhone 15 Pro Max - 256GB Natural Titanium",
+      "detail": "Brand new sealed box iPhone 15 Pro Max with official warranty. Unlocked for all carriers.",
+      "category": "Electronics",
+      "subcategory": "Mobile Phones",
+      "country": "India",
+      "state": "Delhi",
+      "city": "New Delhi",
+      "area": "Connaught Place",
+      "price": 119999,
+      "images": [
+        "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800"
+      ],
+      "isActive": true,
+      "views": 42,
+      "createdAt": "2026-07-27T06:29:03.688Z",
+      "updatedAt": "2026-07-27T06:29:03.688Z"
+    },
+    {
+      "_id": "list_2",
+      "user": {
+        "_id": "user_demo_1",
+        "name": "Rahul Sharma",
+        "phone": "+91 9876543210",
+        "email": "demo@bazarhub.com"
+      },
+      "type": "product",
+      "name": "Royal Enfield Classic 350 (2023 Stealth Black)",
+      "detail": "Well maintained Royal Enfield Classic 350, single owner, first party insurance active till 2026. Only 4,500 kms driven.",
+      "category": "Vehicles",
+      "subcategory": "Motorcycles",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "area": "Bandra West",
+      "price": 185000,
+      "images": [
+        "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800"
+      ],
+      "isActive": true,
+      "views": 89,
+      "createdAt": "2026-07-24T06:29:03.688Z",
+      "updatedAt": "2026-07-24T06:29:03.688Z"
+    },
+    {
+      "_id": "list_3",
+      "user": {
+        "_id": "user_demo_1",
+        "name": "Rahul Sharma",
+        "phone": "+91 9876543210",
+        "email": "demo@bazarhub.com"
+      },
+      "type": "service",
+      "name": "Full Home Deep Cleaning & Sanitization",
+      "detail": "Professional deep cleaning service for 2BHK/3BHK flats and independent houses in Bangalore. Modern equipment and eco-friendly chemicals.",
+      "category": "Services",
+      "subcategory": "Cleaning",
+      "country": "India",
+      "state": "Karnataka",
+      "city": "Bangalore",
+      "area": "Indiranagar",
+      "price": 2999,
+      "images": [
+        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
+      ],
+      "isActive": true,
+      "views": 15,
+      "createdAt": "2026-07-28T18:29:03.688Z",
+      "updatedAt": "2026-07-28T18:29:03.688Z"
+    }
+  ]
+}
